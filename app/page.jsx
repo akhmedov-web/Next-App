@@ -1,7 +1,7 @@
 import MovieCard from "./MovieCard";
 export default async function Home() {
     let movies=[];
-    const data = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.API_KEY}`)
+    const data = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=ee95d277fa0c0009d59cc14c21dc8109`)
     const res = await data.json();
     movies=res.results;
   return (

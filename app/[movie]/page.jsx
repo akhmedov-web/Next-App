@@ -2,7 +2,7 @@ import Image from 'next/image'
 export default async function page({ params }) {
   const { movie } = params;
   const imagePathWay = "https://image.tmdb.org/t/p/original"
-  const data = await fetch(`https://api.themoviedb.org/3/movie/${movie}?api_key=${process.env.API_KEY}`)
+  const data = await fetch(`https://api.themoviedb.org/3/movie/${movie}?api_key=ee95d277fa0c0009d59cc14c21dc8109`)
   const res = await data.json();
   return (
     <div className='further_details_container d-flex flex-column align-items-center'>
