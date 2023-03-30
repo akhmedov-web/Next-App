@@ -4,8 +4,6 @@ export default async function page({ params }) {
   const imagePathWay = "https://image.tmdb.org/t/p/original"
   const data = await fetch(`https://api.themoviedb.org/3/movie/${movie}?api_key=${process.env.API_KEY}`)
   const res = await data.json();
-  console.log(res);
-  console.log(movie)
   return (
     <div className='further_details_container d-flex flex-column align-items-center'>
       <h3 className='text-center mb-3'>{res.title}</h3>

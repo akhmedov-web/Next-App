@@ -2,7 +2,6 @@ import Image from 'next/image'
 import Link from 'next/link';
 export default function MovieCard({ id, title, ranking, photo }) {
     const imagePathWay = "https://image.tmdb.org/t/p/original"
-    console.log(imagePathWay + photo);
     return (
         <div  key={id} className="card movie_card justify-content-between text-decoration-none">
             <Image
